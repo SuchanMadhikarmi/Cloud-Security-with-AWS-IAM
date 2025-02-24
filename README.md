@@ -1,4 +1,4 @@
-<h1>Cloud Security Project: Securing an AWS RDS Database</h1>
+<h1>Cloud Security Project: IAM-Based EC2 Security and Access Control</h1>
 
 
 
