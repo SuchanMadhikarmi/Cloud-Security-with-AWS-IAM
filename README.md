@@ -10,20 +10,26 @@ This project focuses on enhancing the security of cloud environments using AWS I
 
 <h2>Tools and Technologies Used</h2>
 
-- Amazon Web Services (AWS)<b/> :The cloud platform used for this project.
-- AWS IAM (Identity and Access Management):<b/> Managed user access and permissions securely through custom policies.
-- Amazon EC2:<b/> EC2 instances were used for demonstrating scalable computing and secure instance management.
-- JSON Editor:<b/> Used to create custom IAM policies by writing permissions in JSON format.
-- IAM User Groups:<b/> Organized users into groups to control access levels more efficiently.
-- AWS Management Console:<b/> Used for configuring and testing IAM policies and EC2 instances.
+- **Amazon Web Services (AWS)**: The cloud platform used for this project.
+- **AWS IAM (Identity and Access Management)**: Managed user access and permissions securely through custom policies.
+- **Amazon EC2**: EC2 instances were used for demonstrating scalable computing and secure instance management.
+- **JSON Editor**: Used to create custom IAM policies by writing permissions in JSON format.
+- **IAM User Groups**: Organized users into groups to control access levels more efficiently.
+- **AWS Management Console**: Used for configuring and testing IAM policies and EC2 instances.
   <br/>
   
 <h2>Key Features</h2>
-- Custom IAM Policy: Created a policy using the JSON editor that allows specific EC2 actions for instances with the "development" tag and denies actions like creating or deleting tags for all instances.<br/>
-- Secure Access Control: Managed user permissions by assigning the policy to a user group, ensuring that only authorized actions could be performed on EC2 instances.<br/>
-- Testing Access Permissions: Verified the effectiveness of the policy by testing access using an IAM user account, trying to delete both development and production instances.<br/>
-- Separation of Environments: Ensured the correct access control between development and production environments to avoid accidental production data loss.<br/>
-- <br/>
+
+- **Custom IAM Policy**: Created a policy using the JSON editor that allows specific EC2 actions for instances with the "development" tag and denies actions like creating or deleting tags for all instances.
+
+- **Secure Access Control**: Managed user permissions by assigning the policy to a user group, ensuring that only authorized actions could be performed on EC2 instances.
+
+- **Testing Access Permissions**: Verified the effectiveness of the policy by testing access using an IAM user account, trying to delete both development and production instances.
+
+- **Separation of Environments**: Ensured the correct access control between development and production environments to avoid accidental production data loss.
+
+
+<br/>
 
 
 <h2>Steps Undertaken :</h2>
@@ -58,8 +64,8 @@ This project focuses on enhancing the security of cloud environments using AWS I
 <br />
 <br />
  4. <b>Added a User to the Group:</b><br/>
-       - Created a new IAM user and added them to the created group. This ensured the user inherited the permissions defined in the attached policy.<br/>
-       - Allowed inbound access only from specific IP addresses<br/>
+      - Created a new IAM user and added them to the created group. This ensured the user inherited the permissions defined in the attached policy.<br/>
+      - Allowed inbound access only from specific IP addresses.<br/>
        
        <br/>
        
@@ -70,7 +76,7 @@ This project focuses on enhancing the security of cloud environments using AWS I
 <br />
 
 5. <b>Configured a Custom Sign-In Alias for the User:</b><br/>
-       - To enhance user experience and security, I created an IAM account alias. This alias provided a custom sign-in URL that made the login process more intuitive for users.<br/>
+   - To enhance user experience and security, I created an IAM account alias. This alias provided a custom sign-in URL that made the login process more intuitive for users.<br/>
 
   <br/>
 <img src="https://i.imgur.com/lW8lPDP.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
@@ -80,9 +86,9 @@ This project focuses on enhancing the security of cloud environments using AWS I
 
 
 6. <b>Tested IAM Permissions<b/><br/>
-       - Logged in to the AWS console using the IAM user account and tested the IAM permissions.<br/>
-       - First attempted to delete the production EC2 instance. This action was denied due to the policy restricting actions on production instances.<br/>
-       - Then attempted to delete the development EC2 instance. This action was successful, as the IAM policy allowed it for instances with the env: development tag.<br/>
+    - Logged in to the AWS console using the IAM user account and tested the IAM permissions.<br/>
+    - First attempted to delete the production EC2 instance. This action was denied due to the policy restricting actions on production instances.<br/>
+    - Then attempted to delete the development EC2 instance. This action was successful, as the IAM policy allowed it for instances with the env: development tag.<br/>
 
   <br/>
 <img src="https://i.imgur.com/dqQ8Mzt.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
@@ -95,10 +101,14 @@ This project focuses on enhancing the security of cloud environments using AWS I
 
 
 <h2>Key Learnings</h2>
-     - IAM Policy Creation: Gained experience in writing and deploying custom IAM policies using the JSON editor.<br/>
-     - Tag-Based Permissions: Learned how to use EC2 instance tags to control access to resources based on specific criteria.<br/>
-     - Custom User Aliases: Set up custom sign-in URLs for IAM users to improve the login process and add a layer of security.<br/>
-     - Real-World Cloud Security: This project helped me understand how to manage access in a cloud environment, applying best practices to ensure security and avoid unauthorized access.<br/>
+
+- **IAM Policy Creation**: Gained experience in writing and deploying custom IAM policies using the JSON editor.
+
+- **Tag-Based Permissions**: Learned how to use EC2 instance tags to control access to resources based on specific criteria.
+
+- **Custom User Aliases**: Set up custom sign-in URLs for IAM users to improve the login process and add a layer of security.
+
+- **Real-World Cloud Security**: This project helped me understand how to manage access in a cloud environment, applying best practices to ensure security and avoid unauthorized access.
 
 
 </p>
