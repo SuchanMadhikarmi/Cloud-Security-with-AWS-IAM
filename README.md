@@ -93,7 +93,7 @@ This project focuses on enhancing the security of cloud environments using AWS I
   <br/>
 <img src="https://i.imgur.com/dqQ8Mzt.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 <img src="https://i.imgur.com/t4KUL3C.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
-<img src="https://i.imgur.com/fidgNvW.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/xLH0oDD.png" height="130%" width="70%" alt="Disk Sanitization Steps"/>
 
 <br />
 
