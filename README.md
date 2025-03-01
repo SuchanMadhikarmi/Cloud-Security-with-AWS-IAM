@@ -43,8 +43,8 @@ This project focuses on enhancing the security of cloud environments using AWS I
      
 <br />
  2. <b>Created a Custom IAM Policy Using JSON Editor:</b><br/>
-       - Created a custom IAM policy that allows all EC2 actions on instances with the environment: development tag and denies any tag modifications across all EC2 instances.<br/>
-       - The policy was written using the JSON editor in IAM, and key policy details included:<br/>
+     - Created a custom IAM policy that allows all EC2 actions on instances with the environment: development tag and denies any tag modifications across all EC2 instances.<br/>
+     - The policy was written using the JSON editor in IAM, and key policy details included:<br/>
          <br/>
 
   
@@ -64,11 +64,12 @@ This project focuses on enhancing the security of cloud environments using AWS I
 <br />
 <br />
  4. <b>Added a User to the Group:</b><br/>
-      - Created a new IAM user and added them to the created group. This ensured the user inherited the permissions defined in the attached policy.<br/>
-      - Allowed inbound access only from specific IP addresses.<br/>
+   - Created a new IAM user and added them to the created group. This ensured the user inherited the permissions defined in the attached policy.<br/>
+   - Allowed inbound access only from specific IP addresses. <br/>
+        <br/>
        
-       <br/>
-       
+      
+     
      
 <img src="https://i.imgur.com/UEYT6zY.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 
